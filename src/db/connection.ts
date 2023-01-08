@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const database = "mongodb://localhost:27017/shopping";
+const database = "mongodb://172.17.0.1:27017/shopping";
 const databaseDevelopment = "mongodb://localhost:27017/shopping";
 
 export function connectToDb(): void {
