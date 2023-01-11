@@ -18,10 +18,10 @@ The assignment is to implement one ticket of a sprint. As part of a hardware sto
 - Persistence
     - The shopping basket should be persistent (saved to a DB), in case the user closes the page and comes back later
    
- #### Tasks
- - Setup the basic project structure and dependencies
- - Create controller with endpoints
- - Run a MongoDb docker image
+#### Tasks
+- Setup the basic project structure and dependencies
+- Create controller with endpoints
+- Run a MongoDb docker image
 - Add all requests to Postman
 - Build a docker image out of the backend, run it & test it via Postman
 
@@ -44,4 +44,3 @@ The assignment is to implement one ticket of a sprint. As part of a hardware sto
     - docker build -t hv/hardwarestore:0.0.1 .
 - Tag docker image:
     - docker tag hv/hardwarestore:0.0.1 hvossi92/shopping-basket-backend-with-node.js-typescript-mongodb-docker:0.0.1
-
