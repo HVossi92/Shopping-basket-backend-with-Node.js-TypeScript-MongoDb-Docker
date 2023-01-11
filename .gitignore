@@ -1,3 +1,26 @@
+## IDE config files
+### intelliJ
+/.idea
+/*.iml
+### Eclipse
+*.classpath
+/.settings
+/.project
+### Netbeans
+/nbproject
+
+# System Files
+Thumbs.db
+Thumbs.db:encryptable
+.DS_Store
+
+## NODE
+.npm
+.pnpm
+build
+dist
+node_modules
+
 # Logs
 logs
 *.log
