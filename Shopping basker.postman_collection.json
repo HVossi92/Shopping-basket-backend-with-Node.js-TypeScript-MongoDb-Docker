@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "09e838e1-75a9-4e74-8e8f-488b7171129b",
+		"name": "Shopping basker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25222001"
+	},
+	"item": [
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/health",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shopping basket",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"itemId\": \"63bf1e739b2e1068627b704e\",\n        \"amount\": 1\n    },\n        {\n        \"itemId\": \"63bf1e639b2e1068627b704c\",\n        \"amount\": 1\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/shoppingBasket",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"shoppingBasket"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shopping basket",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/api/v1/shoppingBasket/63bf1e8b9b2e1068627b7056",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"shoppingBasket",
+						"63bf1e8b9b2e1068627b7056"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "shopping basket",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/shoppingBasket/63bf1fefd1374452e4d9733c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"shoppingBasket",
+						"63bf1fefd1374452e4d9733c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add items to shopping cart",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"itemId\": \"63bacbd37c3e38910c2a0853\",\n        \"amount\": 5\n    },\n        {\n        \"itemId\": \"63b9cd187d8ba580bbeed210\",\n        \"amount\": 1\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/shoppingBasket/63bf185871125eb90c92334c",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"shoppingBasket",
+						"63bf185871125eb90c92334c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove items from shopping cart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"itemId\": \"63bf1e739b2e1068627b704e\",\n        \"amount\": 1\n    },\n        {\n        \"itemId\": \"63bf1e639b2e1068627b704c\",\n        \"amount\": 1\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/shoppingBasket/63bf1e8b9b2e1068627b7056/items",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"shoppingBasket",
+						"63bf1e8b9b2e1068627b7056",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Holz\",\n    \"price\": 79,\n    \"inventory\": 6,\n    \"minimumOrder\": 4\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/item",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/v1/item/63bf1e739b2e1068627b704e",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"item",
+						"63bf1e739b2e1068627b704e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "item",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Schöner Wohnen Innen- und Wandfarbe Polarweiss matt 10 l\",\n    \"price\": 51.99\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/v1/item/63b9cd187d8ba580bbeed210",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"item",
+						"63b9cd187d8ba580bbeed210"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
